@@ -1,0 +1,12 @@
+
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div id = "question">
+        {% include 'answer/question.html.twig' %}
+    </div>
+    <div id = "answer">
+        {% include 'answer/answer.html.twig' %}
+    </div>
+    {% block page_contents %}{% endblock %}
+{% endblock %}

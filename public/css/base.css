@@ -1,0 +1,85 @@
+body {
+    background: #0f0f23; /*337 x 5*/
+    color: #cccccc;
+    font-family: "Source Code Pro", monospace;
+    font-size: 14pt;
+    min-width: 60em;
+}
+a { outline:0; }
+pre, code { font-family: "Source Code Pro", monospace; }
+a {
+    text-decoration: none;
+    color: #009900;
+}
+a:hover, a:focus {
+    color: #99ff99;
+}
+h1, h2 {
+    font-size: 1em;
+    font-weight: normal;
+}
+code {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+code:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    left: -2px;
+    right: -2px;
+    top: 3px;
+    bottom: 0px;
+    border: 1px solid #333340;
+    background: #10101a;
+}
+pre.wrap {
+    max-width: 100%;
+    white-space: pre-wrap;
+}
+
+header {
+    margin-left: 113px;
+    white-space: nowrap;
+    cursor: default;
+    z-index: 100;
+    margin-bottom: 2em;
+}
+#content{
+    margin-left: 113px;
+    margin-top: 120px;
+}
+#question{
+    margin-bottom: 24px;
+}
+
+
+input[type="text"], textarea {
+    background: transparent;
+    color: inherit;
+    border: 1px solid #666666;
+    background: #10101a;
+    padding: 0 2px;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+textarea {
+    vertical-align: top;
+}
+input[type="submit"] {
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    color: #009900;
+    cursor: pointer;
+}
+input[type="submit"]:hover, input[type="submit"]:focus {
+    color: #99ff99;
+}
