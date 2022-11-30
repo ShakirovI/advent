@@ -7,4 +7,12 @@
 /public/bundles/
 /var/
 /vendor/
+.idea/
+/public/styles/css
+/logs/
+/public/vendor
+/tests/phpunit_coverage/
+/cache
+/public/bundle
+.phpunit.result.cache
 ###< symfony/framework-bundle ###
