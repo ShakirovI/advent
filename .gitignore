@@ -2,6 +2,8 @@
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
+/.env.test
+.env
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
@@ -14,5 +16,13 @@
 /tests/phpunit_coverage/
 /cache
 /public/bundle
-.phpunit.result.cache
+/tools
 ###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+###< symfony/phpunit-bridge ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+###< phpunit/phpunit ###
