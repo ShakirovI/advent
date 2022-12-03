@@ -2,7 +2,7 @@ controllers:
     resource: ../src/Controller/
     type: attribute
 app_answer:
-    path: /answer/{answerId}
+    path: /answer/{id}
     controller: App\Controller\AnswerController::answer
     requirements:
         $answerId: '\d+'

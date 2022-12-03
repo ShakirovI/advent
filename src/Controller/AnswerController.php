@@ -12,11 +12,11 @@ use Symfony\Component\HttpFoundation\Response;
 
 class AnswerController extends AbstractController
 {
-    public function answer(ManagerRegistry $doctrine, int $id = 0): Response
+    public function answer(ManagerRegistry $doctrine, int $id): Response
     {
         $entityManager = $doctrine->getManager();
-        $answer = $entityManager->getRepository(Answers::class)->find($id);
-        $question = $entityManager->getRepository(Questions::class)->find($id);
+        $answer = 'a';
+        $question = $entityManager->getRepository(Questions::class)->find($id)->getQuestionText();
 
         return $this->render('answer/result.html.twig', [
             'questionText' => $question,
