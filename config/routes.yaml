@@ -6,3 +6,26 @@ app_answer:
     controller: App\Controller\AnswerController::answer
     requirements:
         $answerId: '\d+'
+
+app_questions_index:
+    path: /questions
+    controller: App\Controller\QuestionsController::index
+
+app_questions_new:
+    path: /questions/new
+    controller: App\Controller\QuestionsController::new
+
+app_questions_show:
+    path: /questions/{id}
+    controller: App\Controller\QuestionsController::show
+    methods: GET
+
+app_questions_edit:
+    path: /questions/{id}/edit
+    controller: App\Controller\QuestionsController::edit
+    methods: GET|POST
+
+app_questions_delete:
+    path: /questions/{id}
+    controller: App\Controller\QuestionsController::delete
+    methods: POST

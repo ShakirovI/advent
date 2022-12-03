@@ -7,8 +7,8 @@ namespace App\Controller;
 use App\Entity\Answers;
 use App\Entity\Questions;
 use Doctrine\Persistence\ManagerRegistry;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 
 class AnswerController extends AbstractController
 {
@@ -17,6 +17,7 @@ class AnswerController extends AbstractController
         $entityManager = $doctrine->getManager();
         $answer = $entityManager->getRepository(Answers::class)->find($id);
         $question = $entityManager->getRepository(Questions::class)->find($id);
+
         return $this->render('answer/result.html.twig', [
             'questionText' => $question,
             'answerText' => $answer,
